@@ -1,32 +1,37 @@
-    .container{
+    .container {
         border: 1px solid black;
         padding: 0px;
         border-radius: 10px;
-        background-color: pink;
+        background-color: #efeab5;
         display: flex;
         gap: 10px;
+        align-items: center;
+        flex-wrap: nowrap;
     }
 
-    body{
-        color: linear-gradient(blue, red);
+    body {
+        background: #efeab5;
+        height: 100vh;
+        cursor: url(pic/fries.svg), auto;
     }
 
-    *{
+    * {
         box-sizing: border-box;
     }
 
 
 
-    .potato{
+    .potato {
         border-radius: 20px;
         margin: 0px;
         padding: 0px;
         width: 70px;
         height: 70px;
+        title: "Hello, Fries, Again Logo";
     }
 
 
-    .header-text h1{
+    .header-text h1 {
         text-align: center;
         color: #333;
         font-weight: 50;
@@ -35,115 +40,356 @@
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
-    
-    .header-text p{
+
+    .header-text p {
         text-align: center;
         color: #333;
         margin: 0%;
         font-Weight: 50;
         font-size: 20px;
         white-space: nowrap;
-       
+
 
     }
 
     .header-order {
-    margin-left: 60%;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
     }
 
     .order-button {
         text-align: center;
-        align-items: center;    
+        align-items: center;
         background-color: #21b400;
         color: #ffffff;
-        border-radius: 100px; 
-        height: 25px; 
-        width: 150px; 
-        font-size: 20px;    
-        cursor: pointer;
+        border-radius: 100px;
+        height: 25px;
+        width: 150px;
+        font-size: 20px;
+        cursor: url(pic/fries.svg), auto;
         text-decoration: none;
         margin-right: 20px;
+        animation: grow 0.5s infinite;
     }
 
     .order-button:hover {
-        background-color: gold;
-        color: #000000;
-        align-items: center;
-        height: 30px; 
-        width: 160px; 
-        text-shadow: 0px 0px 5px #000000;
+        animation: grow 0.5s infinite;
 
 
     }
 
-    .header-button{
+    @keyframes grow {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .header-buttons {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 30px;
+        white-space: nowrap;
+        text-decoration: none;
+
     }
 
-    .button{
-        color: #EFEAB5;
+
+
+    .header-nav {
+        display: flex;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: inset 0px 0px 10px #e63e62;
+        margin-top: 7px;
+
+    }
+
+    .header-buttons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        white-space: nowrap;
+        text-decoration: none;
+        color: #333;
+    }
+
+    nav {
+        display: flex;
+
+    }
+
+    .button {
+        color: black;
         text-shadow: 0px 0px 10px #000000;
         padding: 10px 20px;
         border: none;
-        border-radius: 5px;
-        cursor: pointer;
+        cursor: url(pic/fries.svg), auto;
         text-decoration: none;
+        white-space: nowrap;
+    }
 
+    .button:hover {
+        background-color: #e63e62;
+        opacity: 0.5;
+        color: black;
+        border-radius: 15px;
+        box-shadow: inset 0px 0px 10px #000000;
+    }
+
+    .body-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 15px;
+        width: calc(100% - 20px);
+        min-height: 80vh;
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .body-text {
+        font-size: 20px;
+        color: #333;
+        text-align: left;
+        margin-bottom: 100px;
+
+
+    }
+
+    p {
+        font-size: 20px;
+        color: #333;
+        text-indent: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+
+    .title {
+        color: #333;
+        text-align: justify;
+        justify-content: right;
+        border: 30px solid black;
+        border-radius: 40px;
+        border-left: #21b400;
+        border-right: #21b400;
+        font-weight: 50;
+        font-size: 40px;
+        border-width: 10px;
+        border-color: #e63e62;
+        padding: 10px;
+        width: fit-content;
+        font-family: papyrus, fantasy;
+        white-space: nowrap;
+    }
+
+    .food-image {
+        height: 400px;
+        border-radius: 10px;
+        border: 10px solid gold;
+        margin-left: 50px;
+        margin-top: 40px;
+
+    }
+
+    .pecture {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+    }
+
+    .footer-container {
+        display: flex;
+        gap: 10px;
+    }
+
+    #patatas {
+        height: 40px;
+        width: 40px;
     }
 
     /* selpon */
     @media (min-width: 301px) and (max-width: 600px) {
 
-    .potato {
-        width: 60px;
-        height: 60px;
-    }
-    .header-text h1 {
-        font-size: 17px;
-        white-space: nowrap;  
-        align-items: center;      
+        .potato {
+            width: 60px;
+            height: 60px;
+        }
+
+        .header-text h1 {
+            font-size: 15px;
+            white-space: nowrap;
+            align-items: center;
+        }
+
+        .header-text p {
+            font-size: 10px;
+            white-space: nowrap;
+            align-items: center;
+        }
+
+        .header-order {
+            margin-left: auto;
+            justify-content: center;
+            font-size: 5px;
+        }
+
+        .order-button {
+            height: 15px;
+            width: 80px;
+            font-size: 10px;
+            margin-right: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-buttons {
+            margin-left: 0px;
+            gap: 3px;
+            font-size: 8px;
+        }
+
+        .button {
+            padding: 5px 10px;
+            font-size: 8px;
+
+        }
+
+        .header-nav {
+            padding: 2px;
+            font-size: 10px;
+        }
+
+        .body-container {
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+
+        }
+
+        .food-image {
+            justify-content: right;
+            align-items: right;
+            height: 140px;
+            border-radius: 10px;
+            border: 5px solid gold;
+            margin-left: 20px;
+            margin-bottom: 170px;
+            display: block;
+
+        }
+
+        #solo {
+            display: none;
+        }
+
+        .pecture {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        .body-text {
+            display: block;
+            margin-bottom: 170px;
+        }
+
+        .title {
+            height: 18px;
+            font-size: 15px;
+            border-top: none;
+            color: black;
+            border-color: greenyellow;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
     }
 
-    .header-text p {
-        font-size: 12px;
-        white-space: nowrap; 
-        align-items: center;  
-    }
-
-    .header-order {
-        margin-left: auto;
-        justify-content: center;
-        font-size: 5px;
-    }
-    .order-button {
-        height: 15px; 
-        width: 80px; 
-        font-size: 10px; 
-        margin-right: 5px; 
-    }
-    .order-button:hover {
-        height: 20px; 
-        width: 90px; 
-        font-size: 10px; 
-        text-align: center;
-    }
-}        /* tablit */
+    /* tablit */
     @media (min-width: 601px) and (max-width: 1024px) {
+
+        .potato {
+            width: 60px;
+            height: 60px;
+        }
+
+        .header-text h1 {
+            font-size: 20px;
+            white-space: nowrap;
+            align-items: center;
+        }
+
+        .header-text p {
+            font-size: 15px;
+            white-space: nowrap;
+            align-items: center;
+        }
+
         .header-order {
             margin-left: auto;
             justify-content: center;
             white-space: nowrap;
 
         }
-        .order-button {
-            height: 20px; 
-            width: 100px; 
-            font-size: 15px; 
-            margin-right: 10px; 
+
+        .header-buttons {
+            margin-left: 0px;
+            gap: 10px;
+            font-size: 10px;
+        }
+
+        .body-container {
+            height: 60vh;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .food-image {
+            height: 200px;
+            border-radius: 10px;
+            border: 10px solid gold;
+            margin-left: 20px;
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 10px;
+            text-indent: 30px;
         }
     }
